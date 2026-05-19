@@ -44,7 +44,7 @@ def check_db():
             "status": "Error",
             "details": "Error interno del servidor."
         }
-#Version6
+#Version7
 # @app.get("/db-check0")
 # def check_db0():
 #     try:
