@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-from sqlalchemy import create_engine, text, OperationalError
+from sqlalchemy import create_engine, text
+# OperationalError
 import os
 
 
@@ -19,7 +20,7 @@ def read_root():
 
 @app.get("/status")
 def status():
-    return {"message": "FastAPI RuizQuiros-FranciscoJavier v.x.y"}
+    return {"message": "FastAPI Apellidos-Nombre v.x.y"}
 
 
 @app.get("/db-check")
@@ -30,12 +31,12 @@ def check_db():
             connection.execute(text("SELECT 1"))
         return {"status": "Conexión a la base de datos exitosa"}
 
-    except OperationalError:
-        # captura error de conexión ("db" no responde o no existe)
-        return {
-            "status": "Error",
-            "details": "No se ha podido establecer conexión con base de datos."
-        }
+    # except OperationalError:
+    #     # captura error de conexión ("db" no responde o no existe)
+    #     return {
+    #         "status": "Error",
+    #         "details": "No se ha podido establecer conexión con base de datos."
+    #     }
 
     except Exception:
         # Captura cualquier otro error inesperado de forma genérica
