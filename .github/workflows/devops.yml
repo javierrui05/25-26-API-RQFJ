@@ -29,7 +29,7 @@ jobs:
         with:
           context: .
           push: true 
-          tags: ${{ secrets.DHUB_USER_REC }}/galeria:latest
+          tags: ${{ secrets.DHUB_USER_REC }}/25-26-api-rqfj:latest
   aws:
     name: Deploy image to aws
     needs: build
