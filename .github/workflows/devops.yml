@@ -5,10 +5,12 @@ on:
     branches: [ main ]
     paths:
       - src/**
+      - compose.yaml
   pull_request:
     branches: [ main ]
     paths:
       - src/**
+      - compose.yaml
 
 jobs:
   build:
