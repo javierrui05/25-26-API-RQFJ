@@ -45,7 +45,7 @@ jobs:
         port: 22 # ${{ secrets.PORT }}
         key: ${{ secrets.EC2_KEY_REC }}
         source: "compose.yaml"
-        target: /home/ubuntu
+        target: /home/ubuntu/25-26-api-rqfj
     # 2
     - name: script deploy docker services 
       uses: appleboy/ssh-action@v1.0.3
