@@ -55,6 +55,6 @@ jobs:
         key: ${{ secrets.EC2_KEY_REC }}
         port: 22  # ${{ secrets.PORT }}
         script: |
-            sleep 30
+            cd /home/ubuntu/25-26-api-rqfj
             docker compose down --rmi all
             docker compose up -d
