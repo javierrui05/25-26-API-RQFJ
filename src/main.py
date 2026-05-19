@@ -20,7 +20,7 @@ def read_root():
 
 @app.get("/status")
 def status():
-    return {"message": "FastAPI RuizQuiros-FranciscoJavier v.2.1"}
+    return {"message": "FastAPI RuizQuiros-FranciscoJavier v.2.2"}
 
 
 @app.get("/db-check")
@@ -44,7 +44,7 @@ def check_db():
             "status": "Error",
             "details": "Error interno del servidor."
         }
-#Version8
+#Version10
 # @app.get("/db-check0")
 # def check_db0():
 #     try:
